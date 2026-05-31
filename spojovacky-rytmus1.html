@@ -561,8 +561,11 @@
 
         if (matchedIds.size === pairs.length) {
           window.setTimeout(() => {
-            setMessage("Hotovo! Zkus další spojovačku", "good", "✓");
-          }, 300);
+            setMessage("Hotovo!", "good", "✓");
+          }, 250);
+          window.setTimeout(() => {
+            newBoard();
+          }, 1200);
         }
       } else {
         wrongScore += 1;
